@@ -13,4 +13,8 @@ It must not contain escrow state logic, trust scoring, dispute handling logic, f
 - `Badge`
 - `Card`
 - `ProfileCard`
+- `ProfilePaymentWidget`
 
+## Usage
+
+`ProfilePaymentWidget` is intentionally API-agnostic. Your app provides the submit handler, which keeps backend workflow logic out of this public repo.

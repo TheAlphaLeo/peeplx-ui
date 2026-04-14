@@ -18,3 +18,21 @@ export interface ProfileCardData {
   };
 }
 
+export interface ProfilePaymentFormValue {
+  amount: string;
+  currency: "NGN" | "USD" | "USDT" | "USDC";
+  description: string;
+  payerEmail: string;
+  payerName: string;
+  paymentMethod: "card" | "crypto";
+}
+
+export interface ProfilePaymentWidgetPayload {
+  username: string;
+  amount: number;
+  currency: "NGN" | "USD" | "USDT" | "USDC";
+  description?: string;
+  payerEmail: string;
+  payerName: string;
+  paymentMethod: "card" | "crypto";
+}
